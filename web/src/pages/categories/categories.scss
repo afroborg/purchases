@@ -1,0 +1,15 @@
+.categories__list {
+  margin-top: $margin-double;
+}
+
+.categories__list .category {
+  padding: $padding-double;
+  background: white;
+  margin-bottom: $margin;
+  display: flex;
+  justify-content: space-between;
+  i:hover {
+    color: $color-primary;
+    cursor: pointer;
+  }
+}

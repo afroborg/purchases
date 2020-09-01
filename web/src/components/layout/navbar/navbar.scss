@@ -1,0 +1,68 @@
+$menu-icon-size: calc(#{$navbar-height} - #{$padding-double});
+
+.navbar {
+  padding: $padding;
+  height: $navbar-height;
+  display: grid;
+  grid-template-columns: $menu-icon-size auto;
+}
+
+.navbar__menu-icon {
+  height: 100%;
+  display: grid;
+  place-items: center;
+  font-size: 1.5em;
+  &:hover {
+    background: $color-menu--hover;
+  }
+}
+
+.navbar__logo {
+  height: $menu-icon-size;
+  margin: 0 auto;
+  position: relative;
+  transform: translateX(calc(#{$menu-icon-size} / 2 * -1));
+  img  {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.navbar__menu {
+  position: absolute;
+  top: $navbar-height;
+  left: 0;
+  width: 100%;
+  background: $color-secondary;
+  max-height: 0;
+  transition: all 200ms;
+  overflow: hidden;
+  z-index: 9;
+  box-shadow: $box-shadow;
+  &--toggled {
+    max-height: 200px;
+  }
+}
+
+.navbar__menu__item {
+  display: block;
+  padding: $padding-double;
+  color: white;
+  font-weight: $font-weight-bold;
+  position: relative;
+  z-index: 2;
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 0px;
+    background: $color-primary;
+    right: 0;
+    top: 0;
+    transition: all 200ms;
+  }
+  &--active::after {
+    width: 5px;
+  }
+}

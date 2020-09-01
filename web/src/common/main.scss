@@ -1,0 +1,62 @@
+@import './css-variables';
+@import './colors';
+@import './sizing';
+@import './typography';
+@import './alerts';
+@import './page';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+body {
+  font-family: $font-family;
+  color: #333;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.big-number__incrementer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: $margin-triple;
+  i {
+    font-size: 2.5em;
+    cursor: pointer;
+  }
+}
+
+.big-circle__indicator {
+  $size: 225px;
+  height: $size;
+  width: $size;
+  background: $color-primary;
+  font-weight: $font-weight-black;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 8em;
+  input {
+    border: none;
+    outline: none;
+    background: none;
+    text-align: center;
+    width: 100%;
+    font-size: 1em;
+    font-weight: $font-weight-bold;
+    color: $color-secondary;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .indicator__suffix {
+    font-size: 24px;
+  }
+}

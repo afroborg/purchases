@@ -1,0 +1,23 @@
+
+.photos__viewer {
+  width: 100%;
+  min-height: 400px;
+  display: grid;
+  place-items: center;
+  position: relative;
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.photos__toolbar {
+  margin-top: $margin;
+  display: flex;
+}
+
+
+.hidden__inputs {
+  display: none;
+}

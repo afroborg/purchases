@@ -1,0 +1,16 @@
+.p-list__item {
+  padding: $padding-double;
+  margin-top: $margin-double;
+  font-size: 1.2em;
+  transition: background 200ms;
+  &:hover,
+  &:focus,
+  &--selected {
+    background: white;
+    font-weight: $font-weight-bold;
+  }
+  i {
+    color: $color-green;
+    margin-right: $margin;
+  }
+}

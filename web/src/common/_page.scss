@@ -1,0 +1,17 @@
+.main-page {
+  padding: $padding-triple;
+  height: calc(100vh - #{$navbar-height});
+  display: flex;
+  flex-direction: column;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+
+.page__action {
+  margin-top: auto;
+}

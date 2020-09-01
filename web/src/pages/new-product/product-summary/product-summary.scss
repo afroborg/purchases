@@ -1,0 +1,24 @@
+.product-summary__info {
+  margin: $margin 0;
+  font-size: 1.1em;
+  span {
+    font-weight: $font-weight-black;
+  }
+}
+
+.product-summary__images {
+  margin-top: $margin-double;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: $margin;
+}
+
+.product-summary__image {
+  position: relative;
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}

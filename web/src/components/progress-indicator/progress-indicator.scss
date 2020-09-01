@@ -1,0 +1,39 @@
+$indicator-size: 30px;
+
+.progress-indicator {
+  margin: $margin-triple 0;
+}
+
+.progress-indicator__steps {
+  display: flex;
+}
+
+.progress-indicator__steps__step {
+  display: flex;
+  align-items: center;
+  font-size: 0.8em;
+  i {
+    margin: 0 $margin;
+  }
+
+  &--active {
+    .step__name {
+      color: $color-primary;
+    }
+  }
+}
+
+.step__indicator {
+  height: $indicator-size;
+  width: $indicator-size;
+  background: $color-medium-grey;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  margin-bottom: $margin;
+  font-weight: $font-weight-black;
+}
+
+.step__name {
+  font-weight: $font-weight-bold;
+}

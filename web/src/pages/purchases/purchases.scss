@@ -1,0 +1,40 @@
+.purchases h1 {
+  margin-bottom: $margin-double;
+}
+
+.purchases__list__item {
+  padding: $padding;
+  position: relative;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  background: white;
+  margin-bottom: $margin;
+  &:hover .purchase__delete {
+    opacity: 1;
+  }
+}
+
+.purchase__photos {
+  height: 100%;
+  position: relative;
+
+  img {
+    height: 100%;
+    border-radius: 4px;
+  }
+}
+
+.purchase__date {
+  margin-left: $margin-double;
+}
+
+.purchase__delete {
+  position: absolute;
+  right: $margin-double;
+  top: 50%;
+  transform: translateY(-50%);
+  color: $color-primary;
+  cursor: pointer;
+  opacity: 0;
+}

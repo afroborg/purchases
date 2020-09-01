@@ -1,0 +1,10 @@
+.purchase-summary input {
+  outline: none;
+  border: none;
+  height: 42px;
+  margin-bottom: $margin;
+  padding: $padding;
+  font-size: 1em;
+  font-weight: $font-weight-bold;
+  color: $color-secondary;
+}

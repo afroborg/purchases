@@ -1,0 +1,9 @@
+$padding: var(--padding);
+$padding-double: calc(#{$padding} * 2);
+$padding-triple: calc(#{$padding} * 3);
+
+$margin: var(--margin);
+$margin-double: calc(#{$margin} * 2);
+$margin-triple: calc(#{$margin} * 3);
+
+$navbar-height: 60px;

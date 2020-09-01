@@ -1,0 +1,15 @@
+.suppliers__list {
+  margin-top: $margin-double;
+}
+
+.suppliers__list .supplier {
+  padding: $padding-double;
+  background: white;
+  margin-bottom: $margin;
+  display: flex;
+  justify-content: space-between;
+  i:hover {
+    color: $color-primary;
+    cursor: pointer;
+  }
+}

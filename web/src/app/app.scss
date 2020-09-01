@@ -1,0 +1,11 @@
+#app {
+  display: grid;
+  grid-template-rows: $navbar-height calc(100vh - #{$navbar-height});
+  position: relative;
+  overflow-x: hidden;
+}
+
+.app__router-content {
+  background: $color-page-bg;
+  height: 100%;
+}
