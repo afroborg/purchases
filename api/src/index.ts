@@ -13,6 +13,12 @@ app.use(cors());
 app.use('/api', router);
 
 router.get('/', (_req, res) => res.send('hi'));
+router.get('/echo', (_req, res) =>
+  res.send({
+    success: true,
+    message: `Hello, the time is ${new Date()} and this API is online.`,
+  })
+);
 
 router.use('/purchases', purchases);
 router.use('/categories', categories);
